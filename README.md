@@ -1,47 +1,30 @@
-# Simple Flask Application
+# Simple Python Add Function
 
-This is a basic Flask web application that demonstrates a simple API endpoint and template rendering.
+This is a basic Python script that demonstrates adding two numbers using a simple function.
 
-## Setup
+## Description
 
-1. Create a virtual environment (recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-```
+The script contains:
+- An `add` function that takes two numbers as parameters and returns their sum
+- Interactive input prompts for entering numbers
+- Formatted output showing the result
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+## Running the Script
 
-## Running the Application
-
-To run the application:
+To run the script:
 
 ```bash
 python app.py
 ```
 
-The application will be available at `http://localhost:5000`
+## Example Usage
 
-## Available Endpoints
+```python
+# Function usage in code
+result = add(5, 3)  # Returns 8
 
-- `GET /`: Home page
-- `GET /api/hello`: Returns a JSON response with a greeting message
-- `POST /api/add`: Adds two numbers
-  - Request body (JSON):
-    ```json
-    {
-        "num1": 10,
-        "num2": 20
-    }
-    ```
-  - Response:
-    ```json
-    {
-        "result": 30,
-        "num1": 10,
-        "num2": 20
-    }
-    ```
+# Running the script
+Enter first number: 5
+Enter second number: 3
+The sum of 5 and 3 is: 8
+```
